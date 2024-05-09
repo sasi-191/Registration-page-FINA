@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="off">
+        <form id="form">
+            <h2>REGISTRATION FORM</h2>
+
+            <label for="username">Name</label>
+            <input type="text" id="name" placeholder="Enter username" maxlength="20" />
+            <span style="color:red" id="nameerror"></span>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+            <span style="color:red" id="emailerror"></span>
+
+            <label for="mobile">Mobile Num</label>
+            <input type="number" id="mobile" placeholder="Enter Mobile" />
+            <span style="color:red" id="mobileerror"></span>
+
+            <label>Gender</label>
+            <select>
+                <option >Male</option>
+                <option >Fe-male</option>
+                <option >Others</option>
+            </select>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+            <span style="color:red" id="passerror"></span>
+
+            <label for="password">Confirm Password</label>
+            <input type="password" id="cpassword" placeholder="Confirm password" />
+            <span style="color:red" id="cpasserror"></span>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <div>
+        <p id="output"></p>
+        <a id="a" href="index.html">Go Back</a>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
